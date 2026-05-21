@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import axios from "axios";
 import SeverityChart from "./SeverityChart";
 
-const socket = io("https://pulsepriority-ai-1.onrender.com");
+const socket = io("http://localhost:5000");
 
 function getWaitTime(since) {
   const diff = Math.floor((new Date() - new Date(since)) / 60000);
@@ -19,7 +19,7 @@ function Dashboard() {
   const [activityLog, setActivityLog] = useState([]);
 
   useEffect(() => {
-    axios.get("https://pulsepriority-ai-1.onrender.com/api/patients").then(res => setPatients(res.data));
+    axios.get("http://localhost:5000/api/patients").then(res => setPatients(res.data));
 
     socket.on("queueUpdated", (data) => {
       setPatients(prev => {
@@ -47,7 +47,7 @@ function Dashboard() {
   }, []);
 
   const handleDischarge = async (id, name) => {
-    await axios.delete(`https://pulsepriority-ai-1.onrender.com/api/patients/${id}`);
+    await axios.delete(`http://localhost:5000/api/patients/${id}`);
     setActivityLog(prev => [{
       id: id + Date.now(),
       time: getTime(),
@@ -58,7 +58,7 @@ function Dashboard() {
   };
 
   const handleStatus = async (id, status) => {
-    await axios.patch(`https://pulsepriority-ai-1.onrender.com/api/patients/${id}`, { status });
+    await axios.patch(`http://localhost:5000/api/patients/${id}`, { status });
   };
 
   const critical = patients.filter(p => p.severityLevel === "Critical").length;

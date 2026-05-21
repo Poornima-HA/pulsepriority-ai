@@ -26,7 +26,7 @@ function PatientForm({ onSuccess }) {
   const handleSubmit = async () => {
     setLoading(true);
     try {
-      const res = await axios.post("https://pulsepriority-ai-1.onrender.com/api/patients", {
+      const res = await axios.post("http://localhost:5000/api/patients", {
         ...form,
         age: Number(form.age),
         spo2: Number(form.spo2),
