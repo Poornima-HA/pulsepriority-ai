@@ -1,16 +1,87 @@
-# React + Vite
+# 🚑 PulsePriority AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### AI-Powered Emergency Response & Smart Hospital Triage System
 
-Currently, two official plugins are available:
+PulsePriority AI is a smart healthcare emergency management platform designed to improve hospital emergency coordination using AI, real-time tracking, and instant communication technologies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The system helps hospitals:
+- prioritize critical patients faster
+- reduce emergency response delays
+- coordinate ambulances in real time
+- instantly alert medical staff
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Features
 
-## Expanding the ESLint configuration
+✅ AI-Based Patient Severity Analysis  
+✅ Real-Time Emergency Queue Prioritization  
+✅ Live Ambulance Tracking using Google Maps API  
+✅ WhatsApp Emergency Alerts using Twilio  
+✅ Real-Time Dashboard Updates  
+✅ Role-Based Login System  
+✅ Modern Healthcare UI/UX  
+✅ Emergency Analytics Dashboard  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+# 🧠 How It Works
+
+1. Patient vitals and symptoms are entered
+2. AI analyzes severity based on:
+   - SpO2
+   - Heart Rate
+   - Blood Pressure
+   - Age
+   - Symptoms
+3. System generates severity score
+4. Emergency queue auto-reorders in real time
+5. Ambulance dispatch and tracking begin
+6. Doctors receive instant WhatsApp alerts
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+- React.js
+- CSS
+- JavaScript
+
+## Backend
+- Node.js
+- Express.js
+
+## APIs & Integrations
+- Google Maps JavaScript API
+- Twilio WhatsApp API
+- Socket.io
+
+## Deployment
+- Vercel
+- Render
+
+---
+
+# 📸 Screenshots
+
+## 🔐 Login System
+(Add screenshot here)
+
+## 📊 Emergency Dashboard
+(Add screenshot here)
+
+## 🚑 Live Ambulance Tracking
+(Add screenshot here)
+
+## 📩 WhatsApp Alert Integration
+(Add screenshot here)
+
+---
+
+# ⚙️ Installation
+
+## Clone Repository
+
+```bash
+git clone https://github.com/your-username/pulsepriority-ai.git
