@@ -63,22 +63,6 @@ The system helps hospitals:
 
 ---
 
-# 📸 Screenshots
-
-## 🔐 Login System
-(Add screenshot here)
-
-## 📊 Emergency Dashboard
-(Add screenshot here)
-
-## 🚑 Live Ambulance Tracking
-(Add screenshot here)
-
-## 📩 WhatsApp Alert Integration
-(Add screenshot here)
-
----
-
 # ⚙️ Installation
 
 ## Clone Repository
