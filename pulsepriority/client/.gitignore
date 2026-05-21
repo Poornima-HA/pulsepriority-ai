@@ -1,6 +1,10 @@
 server/.env
 client/.env
 node_modules/
+pulsepriority/ai/venv/
+pulsepriority/ai/.venv/
 venv/
 .venv/
 *.env
+__pycache__/
+*.pyc
