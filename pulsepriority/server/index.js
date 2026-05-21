@@ -100,7 +100,7 @@ app.post("/api/patients", async (req, res) => {
     const data = req.body;
 
     // Call AI engine
-    const aiResponse = await axios.post("http://127.0.0.1:5001/predict", {
+    const aiResponse = await axios.post("https://pulsepriority-ai-engine.onrender.com", {
       spo2: data.spo2,
       heart_rate: data.heartRate,
       bp_systolic: data.bpSystolic,
@@ -146,7 +146,7 @@ app.post("/api/ambulance", async (req, res) => {
     const data = req.body;
 
     // Call AI engine
-    const aiResponse = await axios.post("http://127.0.0.1:5001/predict", {
+    const aiResponse = await axios.post("https://pulsepriority-ai-engine.onrender.com", {
       spo2: data.spo2,
       heart_rate: data.heartRate,
       bp_systolic: data.bpSystolic,
