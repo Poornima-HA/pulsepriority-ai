@@ -5,7 +5,7 @@ import Dashboard from "./components/Dashboard";
 import Login from "./components/Login";
 import AmbulanceMap from "./components/AmbulanceMap";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://pulsepriority-ai-1.onrender.com");
 
 function App() {
   const [activeTab, setActiveTab] = useState("dashboard");

@@ -56,7 +56,7 @@ function AmbulanceMap({ onClose }) {
     setCountdown(prev => ({ ...prev, [amb.id]: etaMinutes * 60 }));
 
     try {
-      await axios.post("http://localhost:5000/api/ambulance", {
+      await axios.post("https://pulsepriority-ai-1.onrender.com/api/ambulance", {
         name: amb.name,
         age: amb.age,
         spo2: amb.spo2,
